@@ -12,12 +12,6 @@ const { DateTime } = require('luxon');
 
 var app = express();
 
-// Set the view engine to EJS
-app.set('view engine', 'ejs');
-
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
